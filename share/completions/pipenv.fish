@@ -1,3 +1,3 @@
 if command -sq pipenv
-    pipenv --completion 2>/dev/null | source
+    env _PIPENV_COMPLETE=source-fish pipenv 2>/dev/null | source
 end
